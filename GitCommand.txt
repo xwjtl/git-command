@@ -1,6 +1,7 @@
 //creat git repositories
 
-
+git config --global user.email "x@hotmail.com"
+git config --global user.name "x" 
 
 //get repositories
 
@@ -13,7 +14,52 @@ git  clone ssh
 
 git status   //显示变更文件
 
-git add 文件或文件夹名  //添加要comment的文件或文件夹
+git add 文件或文件夹名  //添加要comment的文件或文件夹 全部就用./
+
+git commit  //commit
+    git commit -m 【“说明”】 // 带说明commit
+
+git push 【origin】  //上传服务器
+
+git log //commit记录
+
+
+//git pull
+
+git pull origin  //取得最新
+
+//副本 branch
+
+git checkout -b 【branch】【main】 //从main复制到新branch
+
+git branch  //查看branch 和现在的选择
+
+git checkout 【branch】 //branch之间切换
+
+
+
+//marge 整合 不同branch间
+
+1.先切换到要整合的branch
+git branch //查看有哪些branch
+git checkout 【main】 //整合对象为main
+2.整合
+git merge 【branch】 //branch 整合到 main
+
+
+//push冲突时
+git fetch 【orgin】 //服务器上的文件下载对比
+git branch -a //查看全部branch
+git merge 【origin/main】 //把服务器上主线整合到自己的，会要求vi编辑说明
+git push 【origin】
+
+方法2.
+git fetch origin
+git rebase origin/main
+git push origin -f
+
+
+
 
 
 
