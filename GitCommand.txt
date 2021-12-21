@@ -1,0 +1,19 @@
+//creat git repositories
+
+
+
+//get repositories
+
+git clone https://*******  [file name]
+
+git  clone ssh
+
+
+//git comment
+
+git status   //显示变更文件
+
+git add 文件或文件夹名  //添加要comment的文件或文件夹
+
+
+
